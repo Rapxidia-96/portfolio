@@ -1,0 +1,46 @@
+@import 'vars';
+.hero-container{
+    display: grid;
+    min-width: 320px;
+    grid-template-columns: 1fr 2fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    background-color: var(--section-bg-color);
+    border-radius: 9px;
+    margin: 8px;
+    box-shadow: rgba(255, 255, 255, 0.137) 0px 5px 15px;  
+}
+.hero-container .picture,
+.hero-container .info
+{
+    height: auto;
+}
+.hero-container .picture{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container .picture img{
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.hero-container .info{
+    padding: 2px 12px;
+}
+
+.hero-container .info h1{
+    font-size: var(--sm);
+    color: var(--primary-color);
+    text-align: start;
+    
+}
+
+.hero-container .info p{
+    font-size: var(--sm);
+    color: var(--secundary-color);
+    text-align: initial;
+}
