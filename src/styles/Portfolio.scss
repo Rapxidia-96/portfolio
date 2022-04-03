@@ -1,28 +1,30 @@
 @import 'vars';
 
 .portfolio{
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-content: center;
+    margin:0 28px;
 }
 .portfolio__container{
-    width: 100%;
-    // margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 20px;
+
 }
-.portfolio__container h2{
+.portfolio h2{
     font-size: var(--lg);
     color: var(--primary-color);
     text-align: center;
-    margin: 16px 30px;
+
 }
 .portfolio__project{
+    // min-width: 100px;
     background-color: var(--section-bg-color);
     height: auto;
-    margin: 28px;
     border-radius: 9px;
     border: 1px solid var(--primary-button); 
     padding: 12px;
+    
 }
 
 .portfolio__project--title,
@@ -42,24 +44,22 @@
 .portfolio__project--details ul{
     display: flex;
     justify-content: flex-start;
-    padding: 0;
+    // padding: 0;
     list-style: none;
 }
 .portfolio__project--details ul li{
     text-decoration: none;
-    border: 1px solid var(--secundary-color);
+    // border: 1px solid var(--primary-button); 
     color: var(--secundary-color);
-    padding: 2px 5px;
-    margin: 0 2px;
+    // padding: 2px 5px;
+    // margin: 0 2px;
     border-radius: 5px;
 }
 .portfolio__project--description{
     color: var(--secundary-color);
     font-size: var(--md);
 }
-.portfolio__project--image-container{
-    margin: 0;
-}
+
 .portfolio__project--image-container .portfolio__project--image{
     width: 100%;
     object-fit: cover;
@@ -68,22 +68,23 @@
 
 
 @media (min-width: 576px){
-    .portfolio{
-        width: 320px;
+    .portfolio__project{
+        width: 250px;
     }
+
 }
-@media (min-width: 768px){
-    .portfolio{
-        width: 320px;
-    }
-}
-@media (min-width: 992px){
-    .portfolio{
-        width: 320px;
-    }
-}
-@media (min-width: 1200px){
-    .portfolio{
-        width: 320px;
-    }
-}
+// @media (min-width: 768px){
+//     .portfolio__container{
+//         grid-template-columns: 1fr 1fr 1fr;
+//     }
+// }
+// @media (min-width: 992px){
+//     .portfolio__container{
+//         grid-template-columns: 1fr 1fr 1fr 1fr;
+//     }
+// }
+// @media (min-width: 1200px){
+//     .portfolio{
+//         width: 320px;
+//     }
+// }

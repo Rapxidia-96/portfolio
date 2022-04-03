@@ -16,14 +16,69 @@ const Portfolio = () => {
             ],
             'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, cumque! Aliquam nam, non eos quaerat consectetur reicihil temporibus perspiciatis',
             'image': proyect
-        }
+        },
+        {
+            'title':'React-Shop',
+            'course':'Plazti',
+            'lenguages':[
+                'HTML',
+                'CSS',
+                'JavaScript'    
+            ],
+            'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, cumque! Aliquam nam, non eos quaerat consectetur reicihil temporibus perspiciatis',
+            'image': proyect
+        },
+        {
+            'title':'React-Shop',
+            'course':'Plazti',
+            'lenguages':[
+                'HTML',
+                'CSS',
+                'JavaScript'    
+            ],
+            'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, cumque! Aliquam nam, non eos quaerat consectetur reicihil temporibus perspiciatis',
+            'image': proyect
+        },
+        {
+            'title':'React-Shop',
+            'course':'Plazti',
+            'lenguages':[
+                'HTML',
+                'CSS',
+                'JavaScript'    
+            ],
+            'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, cumque! Aliquam nam, non eos quaerat consectetur reicihil temporibus perspiciatis',
+            'image': proyect
+        },
+        {
+            'title':'React-Shop',
+            'course':'Plazti',
+            'lenguages':[
+                'HTML',
+                'CSS',
+                'JavaScript'    
+            ],
+            'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, cumque! Aliquam nam, non eos quaerat consectetur reicihil temporibus perspiciatis',
+            'image': proyect
+        },
+        {
+            'title':'React-Shop',
+            'course':'Plazti',
+            'lenguages':[
+                'HTML',
+                'CSS',
+                'JavaScript'    
+            ],
+            'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, cumque! Aliquam nam, non eos quaerat consectetur reicihil temporibus perspiciatis',
+            'image': proyect
+        },
     ]
     return (
         <section className='portfolio'>
+            <h2>Portafolio</h2>
             <div className="portfolio__container">
-                <h2>Portafolio</h2>
                 {proyects.map((proyect)=>(
-                    <article className="portfolio__project">
+                    <article key={proyect.title} className="portfolio__project">
                     <div className="portfolio__project--details">
                         <div>
                             <h3 className="portfolio__project--title">
@@ -33,7 +88,7 @@ const Portfolio = () => {
                         </div>
                         <ul>
                             {proyect.lenguages.map((lenguage)=>(
-                                <li className="portfolio__project--item">{lenguage}</li>
+                                <li key={lenguage} className="portfolio__project--item">{lenguage}</li>
                             ))}
                         </ul>
                         <p className="portfolio__project--description"> {proyect.description}</p>

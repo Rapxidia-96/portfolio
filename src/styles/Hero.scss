@@ -1,14 +1,14 @@
 @import 'vars';
 .hero-container{
     display: grid;
-    min-width: 320px;
+    // min-width: 320px;
     grid-template-columns: 1fr 2fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
+    // grid-template-rows: 1fr; 
+    // gap: 0px 0px; 
     background-color: var(--section-bg-color);
     border-radius: 9px;
-    margin: 8px;
-    box-shadow: rgba(255, 255, 255, 0.137) 0px 5px 15px;  
+    margin:0 28px;
+    border: 1px solid var(--primary-button); 
 }
 .hero-container .picture,
 .hero-container .info
@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100px;
 }
 
 .hero-container .picture img{
@@ -43,4 +44,17 @@
     font-size: var(--sm);
     color: var(--secundary-color);
     text-align: initial;
+}
+
+@media (min-width: 576px){
+
+}
+@media (min-width: 768px){
+
+}
+@media (min-width: 992px){
+
+}
+@media (min-width: 1200px){
+
 }
