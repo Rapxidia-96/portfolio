@@ -3,6 +3,7 @@ import React from 'react';
 import '../styles/Hero.scss'
 // import foto from '@images/profile.jpg';
 import foto from '../assets/images/profile.jpg'
+
 const Hero = () => {
     return (
         <section className="hero-container">
