@@ -8,8 +8,9 @@
     flex-wrap: wrap;
     align-content: flex-start;
     gap: 20px;
-
 }
+
+
 .portfolio h2{
     margin: 15px 0;
     font-size: var(--lg);
@@ -23,9 +24,15 @@
     border-radius: 9px;
     border: 1px solid var(--primary-button); 
     padding: 12px;
+    transition: transform .75s;
+
     
 }
+.portfolio__project:hover{
+    transform: scale(1.06);
+    transition-duration: .6s;
 
+}
 .portfolio__project--title,
 .portfolio__project--course{
     margin: 0;
@@ -61,12 +68,11 @@
 }
 .portfolio__project--image-container{
     width: 98%;
-    // place-content: center;
 }
 .portfolio__project--image-container .portfolio__project--image{
     margin-top: 24px;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
     border-radius: 4px;
 }
 
