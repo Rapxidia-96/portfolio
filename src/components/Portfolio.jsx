@@ -50,17 +50,7 @@ const Portfolio = () => {
             'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, cumque! Aliquam nam, non eos quaerat consectetur reicihil temporibus perspiciatis',
             'image': proyect
         },
-        {
-            'title':'React-Shop',
-            'course':'Plazti',
-            'lenguages':[
-                'HTML',
-                'CSS',
-                'JavaScript'    
-            ],
-            'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, cumque! Aliquam nam, non eos quaerat consectetur reicihil temporibus perspiciatis',
-            'image': proyect
-        },
+        
         {
             'title':'React-Shop',
             'course':'Plazti',
